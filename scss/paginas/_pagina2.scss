@@ -1,0 +1,38 @@
+.btns{
+    margin-left: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    background-color: var(--color-white-shade);
+    border-radius: 15px;
+    width: 300px;
+    
+    
+    left: 0;
+    transform: translateY(1500%);
+    
+
+    &:has(.btn:hover) .btn:not(:hover){
+        scale: 0.8;
+        opacity: 0.8;
+        filter: blur(4px);
+        
+    }
+}
+
+.btn{
+    padding: 5px 5px 5px 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 
+        scale 0.25s ease-in;
+        opacity: 0.25s ease-in;
+        filter: 0.25s ease-in;
+
+    &:hover{
+        scale: 1.2;
+    }    
+}
