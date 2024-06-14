@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btns {
+  margin: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  background-color: var(--color-white-shade);
+  border-radius: 15px;
+  width: 300px;
+}
+.btns:has(.btn:hover) .btn:not(:hover) {
+  scale: 0.8;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+.btn {
+  padding: 5px 5px 5px 5px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: scale 0.25s ease-in;
+  opacity: 0.25s ease-in;
+  filter: 0.25s ease-in;
+}
+.btn:hover {
+  scale: 1.2;
+}
+
+/*# sourceMappingURL=style.css.map */
