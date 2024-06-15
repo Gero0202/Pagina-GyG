@@ -40,3 +40,48 @@
     }
     
 }
+
+
+
+.texto-inicial{
+
+
+     .texto-secundario{
+        padding-top: 17px;
+        margin-left: 26%;
+        width: 30%;
+        text-align: center;
+        font-size: 20px
+     }
+
+     .texto-bienvenido{
+
+       @include flex;
+       margin-top: 100px ;
+       margin-right: 600px;
+
+         .char{
+                 font-size: 66px;
+                 display: inline-block;
+                 transition: font-weight 0.3s;
+    
+    
+
+                 &:hover{
+                 font-weight: bold;
+                 transform: scaleX(1.2);
+                }
+            }
+     }
+}
+
+.boton-inicio{
+    margin-top: 15px;
+    margin-left: 950px;
+    padding: 10px 10px 10px 10px;
+    background-color: #8325a5;
+    color: #ffffff;
+    border: 2px black;
+    border-radius: 2px ;
+    
+}
