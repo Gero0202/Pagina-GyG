@@ -8,11 +8,12 @@
 
 .navbar{
     margin: 30px;
-    width: 24%;
+    width: 19%;
     height: 50px;
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
     @include flex;
     
 }
@@ -45,13 +46,14 @@
 
 .texto-inicial{
 
-
+       
      .texto-secundario{
         padding-top: 17px;
         margin-left: 26%;
         max-width: 30%;
         text-align: center;
         font-size: 1.5em;
+        
 
         overflow: hidden;
         border-right: .10em solid black;
@@ -60,7 +62,7 @@
         letter-spacing: 2px;
         animation: 
               typing 3s steps(90, end) .5s 1 normal both,
-              blink-caret .75s  step-end 4s 1;
+              blink-caret 4s  step-end 1s 1 forwards;
               
 
         @keyframes typing{
@@ -69,9 +71,9 @@
         }
 
         @keyframes blink-caret {
-            from{ border-color: transparent;}
+            50% {border-color: transparent}
              to{border-color: transparent}
-            50% {border-color: black}
+            
         }
 
 
@@ -84,9 +86,13 @@
        margin-right: 600px;
 
          .char{
-                 font-size: 66px;
+                 font-size: 79px;
                  display: inline-block;
                  transition: font-weight 0.3s;
+                 font-family: "Dancing Script", cursive;
+                 font-optical-sizing: auto;
+                 font-weight: 400;
+                 font-style: normal;
     
     
 
