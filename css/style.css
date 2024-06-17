@@ -155,13 +155,18 @@ body {
   display: block;
   border-radius: 4%;
 }
-.container .contenido-superpuesto {
+.container .contenido-superpuesto2 {
   position: absolute;
-  top: 50%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+}
+.container .contenido-superpuesto2 .btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
 }
 .container .contenido-superpuesto .btns {
   display: flex;
@@ -197,6 +202,12 @@ body {
 }
 .btns .btn:hover {
   scale: 1.2;
+}
+
+.imagen-para-plantilla img {
+  width: 200px;
+  margin-top: 15px;
+  margin-left: -90%;
 }
 
 .pie {

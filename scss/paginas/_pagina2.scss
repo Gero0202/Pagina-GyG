@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 10%; /* Ajusta el ancho máximo según tu necesidad */
   margin-left: 20%;
+ 
   
 
   .imagen {
@@ -10,15 +11,27 @@
     height: auto;
     display: block;
     border-radius: 4%;
+   
   }
 
-  .contenido-superpuesto {
+  .contenido-superpuesto2{
     position: absolute;
-    top: 50%;
+    top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+
+    .btns {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+
+    }
+}
+
+  .contenido-superpuesto {
+    
 
    
       
