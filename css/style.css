@@ -149,6 +149,44 @@ body {
   max-width: 10%; /* Ajusta el ancho máximo según tu necesidad */
   margin-left: 20%;
 }
+.container .contenido-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.container .contenido-superpuesto .btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.container .contenido-superpuesto .btns:has(.btn:hover) .btn:not(:hover) {
+  scale: 0.8;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+.container .contenido-superpuesto .btns .btn {
+  padding: 1px 5px 5px 5px;
+  background-color: rgb(89, 14, 208);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: scale 0.25s ease-in;
+  opacity: 0.25s ease-in;
+  filter: 0.25s ease-in;
+}
+.container .contenido-superpuesto .btns .btn:hover {
+  scale: 1.2;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 10%; /* Ajusta el ancho máximo según tu necesidad */
+  margin-left: 20%;
+}
 .container .imagen {
   width: 100%;
   height: auto;
@@ -159,22 +197,17 @@ body {
   position: absolute;
   top: 12%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -155%);
   text-align: center;
   color: white;
 }
-.container .contenido-superpuesto2 .btns {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-}
-.container .contenido-superpuesto .btns {
+.container .contenido-superpuesto2 .btns2 {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
 }
 
-.btns {
+.btns2 {
   display: inline-block;
   height: 33px;
   display: flex;
@@ -185,12 +218,12 @@ body {
   width: 40%;
   left: 0;
 }
-.btns:has(.btn:hover) .btn:not(:hover) {
+.btns2:has(.btn:hover) .btn:not(:hover) {
   scale: 0.8;
   opacity: 0.8;
   filter: blur(4px);
 }
-.btns .btn {
+.btns2 .btn {
   padding: 1px 5px 5px 5px;
   background-color: rgb(89, 14, 208);
   color: #fff;
@@ -200,14 +233,32 @@ body {
   opacity: 0.25s ease-in;
   filter: 0.25s ease-in;
 }
-.btns .btn:hover {
+.btns2 .btn:hover {
   scale: 1.2;
 }
 
-.imagen-para-plantilla img {
+.cajas {
+  display: flex;
+  gap: 20px;
+}
+.cajas .imagen-para-plantilla img {
   width: 200px;
   margin-top: 15px;
-  margin-left: -90%;
+  margin-left: -60%;
+}
+.cajas .texto-superpuesto {
+  transform: translate(-59%, -300%);
+  padding: 5px; /* Espacio alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #333; /* Color del texto */
+}
+.cajas .texto-superpuesto .html1 {
+  font-size: 14px;
+}
+.cajas .texto-superpuesto .css {
+  transform: translate(-1%, 200%);
+  font-size: 14px;
+  display: flex;
 }
 
 .pie {

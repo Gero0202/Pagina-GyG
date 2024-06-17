@@ -1,13 +1,120 @@
-
-
-
-         .imagen-para-plantilla{
+.container {
+      position: relative;
+      width: 100%;
+      max-width: 10%; /* Ajusta el ancho máximo según tu necesidad */
+      margin-left: 20%;
+     
+      
     
-                     img{
-                          width: 200px;
-                          margin-top: 15px;
-                          margin-left: -90%;
-                    }
-         }
+      .imagen {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4%;
+       
+      }
+    
+      .contenido-superpuesto2{
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -155%);
+        text-align: center;
+        color: white;
+    
+        .btns2 {
+          display: flex;
+          justify-content: flex-start;
+          gap: 30px;
+    
+        }
+    }
+    
+    
+    }
+      
+    
+    .btns2{
+       display: inline-block;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        background-color: var(--color-white-shade);
+        border-radius: 15px;
+        width: 40%;
+        
+        
+        left: 0;
+       
+        
+        
+    
+        &:has(.btn:hover) .btn:not(:hover){
+            scale: 0.8;
+            opacity: 0.8;
+            filter: blur(4px);
+            
+        }
+    
+    
+        .btn{
+               padding: 1px 5px 5px 5px;
+               background-color: rgb(89, 14, 208);
+               color: #fff;
+               cursor: pointer;
+               border-radius: 20px;
+               transition: 
+               scale 0.25s ease-in;
+               opacity: 0.25s ease-in;
+               filter: 0.25s ease-in;
+    
+        &:hover{
+            scale: 1.2;
+        }    
+    }
+    
+    }
 
 
+.cajas{
+     display: flex;
+    gap: 20px;
+
+       .imagen-para-plantilla{
+    
+                  img{
+                        width: 200px;
+                        margin-top: 15px;
+                      margin-left: -60%;
+                   }
+       }
+
+       .texto-superpuesto {
+            
+            
+           
+           
+            
+            
+           
+            transform: translate(-59%, -300%);
+            padding: 5px; /* Espacio alrededor del texto */
+           border-radius: 5px; /* Bordes redondeados */
+           
+            color: #333; /* Color del texto */
+              
+              .html1{
+                  font-size: 14px
+                  
+              }
+
+              .css{
+                  transform: translate(-1%, 200%);
+                  font-size: 14px;
+                  display: flex;
+              }
+        }
+
+      }
+   

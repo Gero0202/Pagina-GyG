@@ -6,17 +6,10 @@
  
   
 
-  .imagen {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4%;
-   
-  }
 
-  .contenido-superpuesto2{
+  .contenido-superpuesto{
     position: absolute;
-    top: 12%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -26,66 +19,35 @@
       display: flex;
       justify-content: flex-start;
       gap: 30px;
-
-    }
-}
-
-  .contenido-superpuesto {
-    
-
-   
+       
       
       
+      &:has(.btn:hover) .btn:not(:hover){                               
+         scale: 0.8;
+         opacity: 0.8;
+         filter: blur(4px);
+      
+              }            
 
-      .btns {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
+
+              .btn{
+                    padding: 1px 5px 5px 5px;
+                    background-color: rgb(89, 14, 208);
+                   color: #fff;
+                    cursor: pointer;
+                    border-radius: 20px;
+                   transition: 
+                    scale 0.25s ease-in;
+                    opacity: 0.25s ease-in;
+                   filter: 0.25s ease-in;
+
+                    &:hover{
+                scale: 1.2;
+            }    
+         }
 
       }
-    
-  }
+   }
+
 }
   
-
-.btns{
-   display: inline-block;
-    height: 33px;
-    display: flex;
-    justify-content: center;
-    column-gap: 2rem;
-    background-color: var(--color-white-shade);
-    border-radius: 15px;
-    width: 40%;
-    
-    
-    left: 0;
-   
-    
-    
-
-    &:has(.btn:hover) .btn:not(:hover){
-        scale: 0.8;
-        opacity: 0.8;
-        filter: blur(4px);
-        
-    }
-
-
-    .btn{
-           padding: 1px 5px 5px 5px;
-           background-color: rgb(89, 14, 208);
-           color: #fff;
-           cursor: pointer;
-           border-radius: 20px;
-           transition: 
-           scale 0.25s ease-in;
-           opacity: 0.25s ease-in;
-           filter: 0.25s ease-in;
-
-    &:hover{
-        scale: 1.2;
-    }    
-}
-
-}
