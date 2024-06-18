@@ -16,7 +16,7 @@
     
       .contenido-superpuesto2{
         position: absolute;
-        top: 12%;
+        top: 19%;
         left: 50%;
         transform: translate(-50%, -155%);
         text-align: center;
@@ -90,31 +90,67 @@
                    }
        }
 
-       .texto-superpuesto {
-            
-            
+
+
+
+
+
+
+ .cajasdecss{
+
+      width: 30;
+      height: 40%;
+      background-color: #b53db5;
+
+       .texto-superpuesto {     
            
-           
-            
-            
-           
-            transform: translate(-59%, -300%);
-            padding: 5px; /* Espacio alrededor del texto */
+           padding: 5px; /* Espacio alrededor del texto */
            border-radius: 5px; /* Bordes redondeados */
            
             color: #333; /* Color del texto */
+
+          }
               
-              .html1{
-                  font-size: 14px
-                  
-              }
+             
 
               .css{
-                  transform: translate(-1%, 200%);
+                  transform: translate(-60%, 2%);
                   font-size: 14px;
                   display: flex;
               }
         }
-
       }
    
+
+    
+  
+ 
+
+
+
+    .cajas{
+
+      .texto-superpuesto2 {
+           
+           
+          
+          
+           
+           
+          
+          transform: translate(-59%, 10%);
+          padding: 5px; /* Espacio alrededor del texto */
+          border-radius: 5px; /* Bordes redondeados */
+          
+           color: #333; /* Color del texto */
+             
+            .html1{
+                font-size: 14px;
+      
+      
+      
+               } 
+
+           }  
+
+         } 
